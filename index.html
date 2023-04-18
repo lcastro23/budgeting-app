@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Budget Demo</title>
+
+		<meta charset = "utf-8">
+
+		<link rel = "stylesheet" href = "conditional.css" type = "text/css">
+	</head>
+
+	<body>
+			<div class = "ms-5 me-5">
+				<h1>Monthly Budget App</h1>
+
+				<form id = "initialForm" class = "visible">
+					<p>What's your monthly budget?</p>
+					<p><input type = "number" class = "form-control" name = "allowance" id = "allowance"></p>
+					<p><input type = "submit" class = "btn btn-primary" name = "initialSubmit" id = "initialSubmit"></p>
+				</form>
+
+				<form id = "budgetForm" class = "hidden">
+					<p>Category Name</p>
+					<p><input type = "text" class = "form-control" name = "categoryName" id = "categoryName"></p>
+					<p>Category Amount</p>
+					<p><input type = "number" class = "form-control" name = "categoryAmount" id = "categoryAmount"></p>
+					<p><input type = "submit" class = "btn btn-primary" name = "budgetSubmit" id = "budgetSubmit"></p>
+
+					<h3 id = "totalBudget">Total Budget:  </h3>
+					<h3 id = "remainingBudget">Remaining Budget:  </h3>
+					<h3 id = "budgetBreakdown">Budget Breakdown:  </h3>
+
+					<div id = "budgetPieChartDiv">
+						<canvas id = "myPieChart"></canvas>
+					</div>
+				</form>
+			</div>
+
+			<h1 class = "hidden" id = "fuck">fuck</h1>
+
+		<script src = "dist/combined.js"></script>
+	</body>
+</html>
